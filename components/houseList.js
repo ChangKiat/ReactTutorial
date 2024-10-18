@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HouseRow from "./houseRow";
+import HouseRowMem from "./houseRow";
 
 const houseArray = [
     {
@@ -46,7 +46,7 @@ const HouseList = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {houses.map(h => <HouseRow key={h.id} house={h} />)}
+                    {houses.map(h => <HouseRowMem key={h.id} house={h} />)}
                 </tbody>
             </table>
             <button className="btn btn-primary" onClick={addHouse}>
